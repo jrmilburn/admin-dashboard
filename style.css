@@ -1,0 +1,329 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow: hidden;
+
+    --background-color: #7dd3fc;
+    --dark-background-color: #0369a1;
+    --text-color-dark: #082f49;
+    --text-color-light: #f0f9ff; 
+    --input-background: #bae6fd;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 350px 1fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: 
+    'sidebar header'
+    'sidebar main-content';
+}
+
+.header {
+    grid-area: header;
+    background-color: var(--text-color-light);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+.input {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+input {
+    border-radius: 1rem;
+    border: 1px solid #e7e7e7;
+    background-color: var(--input-background);
+    padding: 0.5rem;
+    width: 100%;
+    display: grid;
+    
+}
+
+.icon {
+    width: 2rem;
+    justify-self: right;
+}
+
+.greeting {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.greeting-image{
+    grid-row: 1/3;
+    justify-self: right;
+}
+
+.greeting-image img {
+    width: 6rem;
+    height: 6rem;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.functions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: left;
+    margin: 0 1rem;
+}
+
+.functions button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: var(--dark-background-color);
+    color: var(--text-color-light);
+    position: absolute;
+
+    transition: border 0.5s, background-color 0.5s, color 0.5s, transform 0.5s;
+}
+
+.functions button:hover {
+    border: 1px solid var(--dark-background-color);
+    background-color: var(--text-color-light);
+    color: var(--text-color-dark);
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.user {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 1rem;
+}
+
+.user .name{
+    align-self: center;
+}
+
+.user .logo {
+    width: 4rem;
+    height: 4rem;
+    justify-self: center;
+}
+
+.user .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.user .noti{
+    height: 2rem;
+    width: 2rem;
+    justify-self: end;
+    align-self: center;
+
+    transition: transform 0.5s;
+}
+
+.user .noti:hover {
+    transform: rotate(360deg);
+    cursor: pointer;
+
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: var(--background-color);
+    color: #1d1d1d;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    padding: 1rem;
+    line-height: 1.5;
+    border: 1px solid #7dd3fc;
+}
+
+.seperator{
+    height: 1px;
+    width: 100%;
+    justify-self: center;
+    background-color: #1d1d1d;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: var(--text-color-dark);
+    font-size: 1.5rem;
+}
+
+.sidebar .logo{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center ;
+
+}
+
+.sidebar .logo img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.dashboard-set{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.dashboard-item {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.main-content{
+    grid-area: main-content;
+    background-color: var(--text-color-light);
+    color: var(--text-color-dark);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'projects announcements'
+    'projects trending';
+    padding: 3rem 1rem 3rem 1rem;
+}
+
+.projects  {
+    flex: 1;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    color: var(--text-color-dark);
+}
+
+.project {
+    background-color: var(--background-color);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 1fr;
+}
+
+.project .action-btns {
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem;
+
+    
+}
+
+.project .action-btns .icon {
+    transition: transform 0.5s, color 0.5s;
+}
+
+.project .action-btns .icon:hover {
+    transform: rotate(360deg);
+    color: var(--dark-background-color);
+    cursor: pointer;
+}
+
+.announcements,
+.trending {
+    background-color: var(--background-color);
+    color: var(--text-color-dark);
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: 1fr;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.announcement {
+    
+}
+
+.trending-item {
+    display: grid;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'image name'
+    'image post';
+
+}
+
+.trending-item img{
+    grid-area: image;
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    border-radius: 100%;
+    align-self: center;
+}
+
+.trending-item h3 {
+    grid-area: name;
+    align-self: self-end;
+}
+
+.trending-item p {
+    grid-area: post;
+    align-self: self-start;
+}
+
+
+.wrapper {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.wrapper-projects,
+.wrapper-announcements,
+.wrapper-trending {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+.wrapper-projects h2,
+.wrapper-announcements h2,
+.wrapper-trending h2 {
+    margin-bottom: 0rem;
+}
+
+.wrapper-projects {
+    grid-area: projects;
+}
+
+.wrapper-announcements {
+    grid-area: announcements;
+}
+
+.wrapper-trending{
+    grid-area: trending;
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jm Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <div class="input">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>magnify</title><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" /></svg>
+                </div>
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="greeting">
+                <div class="greeting-image">
+                    <img src="selfie.jpg" alt="">
+                </div>
+                <div class="greeting-text">
+                    <p>Hi there,</p>
+                    <h2>Joe Milburn (@joe)</h2>
+                </div>
+            </div>
+            <div class="user">
+                <div class="noti">
+                    <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>bell-ring-outline</title><path d="M10,21H14A2,2 0 0,1 12,23A2,2 0 0,1 10,21M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M17,11A5,5 0 0,0 12,6A5,5 0 0,0 7,11V18H17V11M19.75,3.19L18.33,4.61C20.04,6.3 21,8.6 21,11H23C23,8.07 21.84,5.25 19.75,3.19M1,11H3C3,8.6 3.96,6.3 5.67,4.61L4.25,3.19C2.16,5.25 1,8.07 1,11Z" /></svg></div>
+                </div>
+                <div class="logo">
+                    <img src="selfie.jpg" alt="logo">
+                </div>
+                <div class="name">
+                    <h2>Joe</h2>
+                </div>
+            </div>
+            <div class="functions">
+                <div class="function"><button>New</button></div>
+                <div class="function"><button>Upload</button></div>
+                <div class="function"><button>Share</button></div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="logo">
+                <img src="selfie.jpg" alt="logo">
+                <h1>Dashboard</h1>
+            </div>
+            <div class="dashboard-set">
+                <div class="dashboard-item"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>home</title><path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" /></svg></div><a href="">Home</a></div>
+                <div class="dashboard-item"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>view-dashboard-variant</title><path d="M2,5V19H8V5H2M9,5V10H15V5H9M16,5V14H22V5H16M9,11V19H15V11H9M16,15V19H22V15H16Z" /></svg></div><a href="">Profile</a></div>
+                <div class="dashboard-item"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>message</title><path d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4C22,2.89 21.1,2 20,2Z" /></svg></div><a href="">Messages</a></div>
+                <div class="dashboard-item"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>clock-time-five</title><path d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12S17.5 2 12 2M14 17L11 11.8V7H12.5V11.4L15.3 16.3L14 17Z" /></svg></div><a href="">History</a></div>
+                <div class="dashboard-item"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>note-text-outline</title><path d="M15 3H5A2 2 0 0 0 3 5V19A2 2 0 0 0 5 21H19A2 2 0 0 0 21 19V9L15 3M19 19H5V5H14V10H19M17 14H7V12H17M14 17H7V15H14" /></svg></div><a href="">Tasks</a></div>
+                <div class="dashboard-item"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account-group</title><path d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z" /></svg></div><a href="">Communities</a></div>
+            </div>
+            <div class="dashboard-set">
+                <div class="dashboard-item"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>cog</title><path d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z" /></svg></div><a href="">Settings</a></div>
+                <div class="dashboard-item"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>help</title><path d="M10,19H13V22H10V19M12,2C17.35,2.22 19.68,7.62 16.5,11.67C15.67,12.67 14.33,13.33 13.67,14.17C13,15 13,16 13,17H10C10,15.33 10,13.92 10.67,12.92C11.33,11.92 12.67,11.33 13.5,10.67C15.92,8.43 15.32,5.26 12,5A3,3 0 0,0 9,8H6A6,6 0 0,1 12,2Z" /></svg></div><a href="">Support</a></div>
+                <div class="dashboard-item"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account-lock</title><path d="M6 8C6 5.79 7.79 4 10 4S14 5.79 14 8 12.21 12 10 12 6 10.21 6 8M12 18.2C12 17.24 12.5 16.34 13.2 15.74V15.5C13.2 15.11 13.27 14.74 13.38 14.38C12.35 14.14 11.21 14 10 14C5.58 14 2 15.79 2 18V20H12V18.2M22 18.3V21.8C22 22.4 21.4 23 20.7 23H15.2C14.6 23 14 22.4 14 21.7V18.2C14 17.6 14.6 17 15.2 17V15.5C15.2 14.1 16.6 13 18 13C19.4 13 20.8 14.1 20.8 15.5V17C21.4 17 22 17.6 22 18.3M19.5 15.5C19.5 14.7 18.8 14.2 18 14.2C17.2 14.2 16.5 14.7 16.5 15.5V17H19.5V15.5Z" /></svg></div><a href="">Privacy</a></div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="wrapper-projects">
+                <h2>Projects</h2>
+                <div class="projects">
+                    <div class="project">
+                        <div class="main-text">
+                            <h2>Project 1</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda impedit at esse fugiat nemo maxime vitae molestiae libero aspernatur cum amet, dicta eligendi magni minima nulla odio delectus quia molestias.</p>
+                        </div>
+                        <div class="action-btns">
+                            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>eye</title><path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z" /></svg></div>
+                            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>star-plus-outline</title><path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" /></svg></div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="main-text">
+                            <h2>Project 2</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum qui minima nam earum eos dignissimos necessitatibus facilis quidem amet nihil magni numquam tenetur inventore esse dicta, eum natus libero maxime.</p>
+                        </div>
+                        <div class="action-btns">
+                            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>eye</title><path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z" /></svg></div>
+                            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>star-plus-outline</title><path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" /></svg></div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="main-text">
+                            <h2>Project 3</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta veritatis quae earum illum tempore, repudiandae, facere provident nisi eum a architecto nobis quisquam culpa natus odio magnam ipsa officiis placeat?</p>
+                        </div>
+                        <div class="action-btns">
+                            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>eye</title><path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z" /></svg></div>
+                            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>star-plus-outline</title><path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" /></svg></div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="main-text">
+                            <h2>Project 4</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi officiis, molestias eos error neque nisi nulla fugiat earum ducimus, praesentium veniam labore fuga debitis sed cumque provident natus, facilis sit!</p>
+                        </div>
+                        <div class="action-btns">
+                            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>eye</title><path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z" /></svg></div>
+                            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>star-plus-outline</title><path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" /></svg></div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="main-text">
+                            <h2>Project 5</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, eum laudantium dolores repellendus corporis voluptatem soluta maiores facilis voluptatibus at odio non ratione id quos numquam tempore quo necessitatibus aperiam.</p>
+                        </div>
+                        <div class="action-btns">
+                            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>eye</title><path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z" /></svg></div>
+                            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>star-plus-outline</title><path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" /></svg></div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="main-text">
+                            <h2>Project 6</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero laborum quibusdam ex et ullam corrupti commodi architecto voluptas! Dolor vel porro impedit laudantium recusandae eius placeat maxime tempora aliquam distinctio!</p>
+                        </div>
+                        <div class="action-btns">
+                            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>eye</title><path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z" /></svg></div>
+                            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>star-plus-outline</title><path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" /></svg></div>
+                        </div>
+                    </div>
+            </div>
+
+            </div>
+            <div class="wrapper-announcements">
+                <h2>Announcements</h2>
+                <div class="announcements">
+                    <div class="announcement">
+                        <h3>Site maintenance</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem tempora itaque sint placeat beatae illo fugit quo ea, excepturi doloribus, exercitationem consectetur deleniti dolorum in maiores eveniet harum veritatis sunt.</p>
+                        <div class="seperator"></div>
+                    </div>
+                    <div class="announcement">
+                        <h3>Something else bad :(</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem tempora itaque sint placeat beatae illo fugit quo ea, excepturi doloribus, exercitationem consectetur deleniti dolorum in maiores eveniet harum veritatis sunt.</p>
+                        <div class="seperator"></div>
+                    </div>
+                    
+                    <div class="announcement">
+                        <h3>Something good :)</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem tempora itaque sint placeat beatae illo fugit quo ea, excepturi doloribus, exercitationem consectetur deleniti dolorum in maiores eveniet harum veritatis sunt.</p></div>
+                </div>
+            </div>
+            <div class="wrapper-trending">
+                <h2>Trending</h2>
+                <div class="trending">
+                    <div class="trending-item">
+                        <img src="selfie.jpg" alt="">
+                        <h3>Joe</h3>
+                        <p>Yo check this out</p>
+                    </div>
+                    <div class="trending-item">
+                        <img src="selfie.jpg" alt="">
+                        <h3>Joe</h3>
+                        <p>Hey its me again</p>
+                    </div>
+                    <div class="trending-item">
+                        <img src="selfie.jpg" alt="">
+                        <h3>Joe</h3>
+                        <p>Am I the only one using this dashboard?</p>
+                    </div>
+                    <div class="trending-item">
+                        <img src="selfie.jpg" alt="">
+                        <h3>Joe</h3>
+                        <p>Oh...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
